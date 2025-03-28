@@ -1,0 +1,181 @@
+:root {
+  /* Paleta de colores para el Piano Pixel Art */
+
+  /* Colores de fondo */
+  --color-lila-fondo: #c8a2c8; /* Fondo lila/lavanda */
+
+  /* Colores del piano */
+  --color-negro-piano: #000000; /* Marco y teclas negras */
+  --color-blanco-teclas: #ffffff; /* Teclas blancas */
+  --color-gris-texto: #666666; /* Texto de las teclas blancas */
+
+  /* Colores de botones */
+  --color-gris-boton: #888888; /* Botón gris */
+  --color-azul-boton: #4169e1; /* Botones azules */
+  --color-amarillo-boton: #ffff00; /* Botones amarillos */
+  --color-verde-boton: #32cd32; /* Botón verde claro */
+  --color-verde-oscuro-boton: #2e8b57; /* Botón verde oscuro */
+  --color-turquesa-boton: #40e0d0; /* Botones turquesa */
+  --color-naranja-boton: #ff7f50; /* Botón naranja */
+
+  /* Color de los corazones */
+  --color-rosa-corazon: #ff6b8a; /* Corazones pixel art */
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--color-lila-fondo);
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.piano-container {
+  display: flex;
+  width: 69vw;
+  height: 56vh;
+  border: 10px solid #000634;
+  background-color: var(--color-negro-piano);
+  margin: 0 auto;
+  position: relative;
+  padding: 8rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+}
+
+.piano-dashboard {
+  padding: 10rem 0;
+}
+
+.key {
+  width: 3rem;
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.white-key {
+  border: 3px solid #010425;
+  background-color: #fff;
+  transition: 0.2s all;
+  height: 100%;
+  width: 23rem !important;
+}
+
+.black-key {
+  background-color: var(--color-negro-piano);
+  z-index: 1;
+  height: 7rem;
+  position: absolute;
+  top: 128px;
+  transition: 0.02s all;
+}
+
+.black-1 {
+  left: 40px;
+}
+
+.black-2 {
+  left: 84px;
+}
+
+.black-4 {
+  left: 172px;
+}
+
+.black-5 {
+  left: 215px;
+}
+.black-6 {
+  left: 259px;
+}
+
+.black-8 {
+  left: 346px;
+}
+.black-9 {
+  left: 390px;
+}
+
+.black-11 {
+  left: 478px;
+}
+
+.black-12 {
+  left: 522px;
+}
+
+.black-13 {
+  left: 566px;
+}
+.black-15 {
+  left: 654px;
+}
+
+.black-16 {
+  left: 698px;
+}
+
+.black-18 {
+  left: 784px;
+}
+
+.black-19 {
+  left: 828px;
+}
+
+.black-20 {
+  left: 872px;
+}
+
+.key-letter {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black-key .key-letter {
+    color: #fff;
+}
+.white-key .key-letter {
+    color :black;
+}
+
+/* Estilo para cuando una tecla está activa */
+.key.active {
+    background-color: rgb(19, 155, 228);
+}
