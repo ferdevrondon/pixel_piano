@@ -4,7 +4,6 @@
 
 This is a fun, interactive virtual piano you can play right in your browser using your computer keyboard! Perfect for music lovers, beginners curious about piano, or just for having a moment of creative fun.
 
-![Piano Preview](https://via.placeholder.com/800x400/f0f0f0/333333?text=Pixel+Piano+Preview)
 
 ## 🚀 Features
 
@@ -40,18 +39,6 @@ Simply click on any key to hear its sound!
 - CSS3
 - JavaScript (ES6+)
 - Audio API
-
-## 📁 Project Structure
-
-```
-pixel-piano/
-├── index.html       # Main HTML file
-├── style.css        # CSS styles
-├── main.js          # JavaScript functionality
-└── sounds/          # Piano sound files
-    ├── white-keys/  # Sounds for white keys
-    └── black-keys/  # Sounds for black keys
-```
 
 ## 🎨 Customization
 
