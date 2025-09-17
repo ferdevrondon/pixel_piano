@@ -83,4 +83,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 💖 Enjoy playing your Pixel Piano! 🎹
+## 💖 Enjoy playing your Pixel Piano! 🎹 V.0.0.1
