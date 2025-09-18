@@ -1,5 +1,8 @@
 # 🎹 Pixel Piano 🎵
 
+<img width="967" height="705" alt="preview" src="https://github.com/user-attachments/assets/2fb56342-0c8b-4be4-8755-aee88146bf3f" />
+
+
 ## ✨ Welcome to Pixel Piano! 
 
 This is a fun, interactive virtual piano you can play right in your browser using your computer keyboard! Perfect for music lovers, beginners curious about piano, or just for having a moment of creative fun.
