@@ -1,23 +1,20 @@
 :root {
 
   
-  /* Paleta de colores para el Piano Pixel Art */
-  /* Colores de fondo */
-  --color-lila-fondo: #c8a2c8; /* Fondo lila/lavanda */
-  /* Colores del piano */
-  --color-negro-piano: #000000; /* Marco y teclas negras */
-  --color-blanco-teclas: #ffffff; /* Teclas blancas */
-  --color-gris-texto: #666666; /* Texto de las teclas blancas */
-  /* Colores de botones */
-  --color-gris-boton: #888888; /* Botón gris */
-  --color-azul-boton: #4169e1; /* Botones azules */
-  --color-amarillo-boton: #ffff00; /* Botones amarillos */
-  --color-verde-boton: #32cd32; /* Botón verde claro */
-  --color-verde-oscuro-boton: #2e8b57; /* Botón verde oscuro */
-  --color-turquesa-boton: #40e0d0; /* Botones turquesa */
-  --color-naranja-boton: #ff7f50; /* Botón naranja */
-  /* Color de los corazones */
-  --color-rosa-corazon: #ff6b8a; /* Corazones pixel art */
+
+  --color-lila-fondo: #c8a2c8; 
+  --color-negro-piano: #000000; 
+  --color-blanco-teclas: #ffffff;
+  --color-gris-texto: #666666;
+
+  --color-gris-boton: #888888; 
+  --color-azul-boton: #4169e1;
+  --color-amarillo-boton: #ffff00;
+  --color-verde-boton: #32cd32;
+  --color-verde-oscuro-boton: #2e8b57; 
+  --color-turquesa-boton: #40e0d0; 
+  --color-naranja-boton: #ff7f50;
+  --color-rosa-corazon: #ff6b8a; 
 }
 
 .space-mono-regular {
@@ -54,15 +51,11 @@ html {
 
   background-color: var(--color-lila-fondo);
   
-  /* Añadir los corazones pixelados mejorados */
+  
   background-image: url('heart.svg');
   background-repeat: repeat;
-  background-size: 80px 80px; /* Ajustar al tamaño de tu SVG */
-  
-  /* Añadir un poco de espacio entre los corazones */
+  background-size: 80px 80px;
   background-position: 10px 10px;
-  
-  /* Resto de tus propiedades */
   height: 100vh;
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -83,7 +76,7 @@ html {
   text-shadow: 1px 1px 2px #2c163f, 0 0 1em #f00093, 0 0 0.2em #8108F7;
   color: #ebf3aeeb;
 }
-/* Piano Container responsivo */
+
 .piano-container {
   display: flex;
   width: 90%;
@@ -107,7 +100,7 @@ html {
   background-color: var(--color-negro-piano);
 }
 
-/* Teclas blancas */
+
 .white-key {
   position: relative;
   border: 2px solid #010425;
@@ -131,7 +124,7 @@ html {
   color: black;
 }
 
-/* Teclas negras */
+
 .black-key {
   background-color: var(--color-negro-piano);
   z-index: 1;
@@ -153,7 +146,7 @@ html {
   transform: translateX(-50%);
 }
 
-/* Posiciones calculadas de las teclas negras */
+
 .black-1 {
   left: calc((100% / 16) * 0.75);
 }
@@ -214,12 +207,12 @@ html {
   left: calc((100% / 16) * 14.75);
 }
 
-/* Estilo para cuando una tecla está activa */
+
 .key.active {
   background-color: rgb(19, 155, 228);
 }
 
-/* Media queries para dispositivos más pequeños */
+
 @media (max-width: 1024px) {
   .piano-container {
     width: 95%;
@@ -258,7 +251,7 @@ html {
     top: clamp(1.5rem, 3vh, 4rem);
   }
   
-  /* Ajuste de posiciones para mobile */
+
   .black-1 { left: calc((100% / 16) * 0.7); }
   .black-2 { left: calc((100% / 16) * 1.7); }
   .black-4 { left: calc((100% / 16) * 2.7); }
@@ -304,7 +297,6 @@ html {
     bottom: 3px;
   }
   
-  /* Ajuste de posiciones para mobile pequeño */
   .black-1 { left: calc((100% / 16) * 0.65); }
   .black-2 { left: calc((100% / 16) * 1.65); }
   .black-4 { left: calc((100% / 16) * 2.65); }

@@ -1,17 +1,17 @@
 const whiteKey = document.querySelectorAll(".white-key");
 const blackKey = document.querySelectorAll(".black-key");
 
-// Asignación simple de teclas para blancas (21 teclas)
+
 const whiteTriggerKeys = "zxcvbnm,./asdfghjkl;'\"".split("");
 
-// Asignación simple de teclas para negras (15 teclas)
+
 const blackTriggerKeys = "qwertyuiop12345".split("");
 
-// Evento para cuando se presiona una tecla
+
 document.addEventListener("keydown", (event) => {
   const key = event.key.toLowerCase();
 
-  // Para teclas blancas
+
   const whiteKeyIndex = whiteTriggerKeys.indexOf(key);
   if (whiteKeyIndex !== -1 && whiteKeyIndex < whiteKey.length) {
     whiteKey[whiteKeyIndex].classList.add("active");
@@ -20,7 +20,7 @@ document.addEventListener("keydown", (event) => {
     playSound(sound);
   }
 
-  // Para teclas negras
+
   const blackKeyIndex = blackTriggerKeys.indexOf(key);
   if (blackKeyIndex !== -1 && blackKeyIndex < blackKey.length) {
     blackKey[blackKeyIndex].classList.add("active");
@@ -30,18 +30,18 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// Evento para cuando se suelta una tecla
+
 document.addEventListener("keyup", (event) => {
   const key = event.key.toLowerCase();
 
-  // Para teclas blancas
+
   const whiteKeyIndex = whiteTriggerKeys.indexOf(key);
   if (whiteKeyIndex !== -1 && whiteKeyIndex < whiteKey.length) {
     whiteKey[whiteKeyIndex].classList.remove("active");
     whiteKey[whiteKeyIndex].style.background = "white";
   }
 
-  // Para teclas negras
+
   const blackKeyIndex = blackTriggerKeys.indexOf(key);
   if (blackKeyIndex !== -1 && blackKeyIndex < blackKey.length) {
     blackKey[blackKeyIndex].classList.remove("active");
@@ -49,7 +49,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-// Mantener funcionalidad de clic
+
 blackKey.forEach((black, index) => {
   black.addEventListener("click", () => {
     let sound = new Audio(`sounds/black-keys/${index}.mp3`);
@@ -84,8 +84,8 @@ function playSound(sound) {
 }
 
 function ran_col(elem) {
-  //function name
-  var color = "#"; // hexadecimal starting symbol
+
+  var color = "#"; 
   var letters = [
     "4169e1",
     "ffff00",
@@ -94,7 +94,7 @@ function ran_col(elem) {
     "40e0d0",
     "ff7f50",
     "ff6b8a",
-  ]; //Set your colors here
+  ]; 
   color += letters[Math.floor(Math.random() * letters.length)];
-  elem.style.background = color; // Setting the random color on your div element.
+  elem.style.background = color; 
 }
